@@ -10,10 +10,12 @@ int main(){
     int del = remove("delete.txt");
     srand(time(0));
     possibility = rand() % (maxNumber - minNumber + 1 ) + minNumber;
-    chamberNumber = rand() % (maxNumber - minNumber + 1 ) + maxNumber;
+    chamberNumber = rand() % (maxNumber - minNumber + 1 ) + minNumber;
+    cout << "First Number: " <<possibility<<endl<<"Second Number: " << chamberNumber<< endl;
+
     if (possibility == chamberNumber){
         cout << "You're Dead " <<possibility<< endl;
-        remove("C:\\Users\\alice\\Desktop\\cppRoulette\\delete.txt");
+        //remove("C:\\Users\\alice\\Desktop\\cppRoulette\\delete.txt");
     }
     else{
     cout << possibility << endl;
