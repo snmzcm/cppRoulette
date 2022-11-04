@@ -16,6 +16,7 @@ int main(){
     if (possibility == chamberNumber){
         cout << "You're Dead " <<possibility<< endl;
         //remove("C:\\Users\\alice\\Desktop\\cppRoulette\\delete.txt");
+        
     }
     else{
     cout << possibility << endl;
