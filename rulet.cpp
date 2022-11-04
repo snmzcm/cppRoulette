@@ -15,7 +15,8 @@ int main(){
 
     if (possibility == chamberNumber){
         cout << "You're Dead " <<possibility<< endl;
-        //remove("C:\\Users\\alice\\Desktop\\cppRoulette\\delete.txt");
+        //Burası şart sağlanmasa dahi mutlaka bir kere çalışıyor.
+        //remove("C:\\Users\\alice\\Desktop\\cppRoulette\\delete.txt"); 
         
     }
     else{
