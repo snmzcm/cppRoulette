@@ -1,9 +1,11 @@
 #include <iostream>
 #include <cstdlib>
 #include <stdio.h>
+#include <filesystem>
 //include filesystem and replace remove() with filesystem libs remove function
 
 using namespace std;
+namespace fs = std::filesystem;
 
 int main(){
     int minNumber = 1, maxNumber = 6;
@@ -14,7 +16,7 @@ int main(){
     cout << "First Number: " <<possibility<<endl<<"Second Number: " << chamberNumber<< endl;
 
     if (possibility == chamberNumber){
-        remove("C:\\Users\\alice\\Desktop\\cppRoulette\\delete.txt"); 
+        std::filesystem::remove("C:\\Users\\alice\\Desktop\\cppRoulette\\delete.txt"); 
         cout << "You're Dead " <<possibility<< endl;
         
     }
@@ -22,6 +24,7 @@ int main(){
     // cout << possibility << endl;
     // }
     
+    // g++ -std=c++17 rulet.cpp -o output
  
 
 
