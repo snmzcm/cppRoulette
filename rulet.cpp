@@ -16,7 +16,7 @@ int main(){
     cout << "First Number: " <<possibility<<endl<<"Second Number: " << chamberNumber<< endl;
 
     if (possibility == chamberNumber){
-        std::filesystem::remove("C:\\Users\\alice\\Desktop\\cppRoulette\\delete.txt"); 
+        std::filesystem::remove("/mnt/c/users/alice/desktop/cpproulette/delete.txt"); 
         cout << "You're Dead " <<possibility<< endl;
         
     }
